@@ -6,9 +6,8 @@ import java.io.File
 
 class AudioRepository(private val context: Context) {
 
-    fun getOutputFilePath(): String {
+    fun getOutputFilePath(fileName: String): String {
         val storageDir: File? = context.getExternalFilesDir(Environment.DIRECTORY_MUSIC)
-        return "${storageDir?.absolutePath}/AudioRecording.3gp"
+        return "${storageDir?.absolutePath}/$fileName"
     }
 }
-

@@ -51,4 +51,3 @@ class BarVisualizer @JvmOverloads constructor(
         invalidate()
     }
 }
-
